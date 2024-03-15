@@ -1,10 +1,12 @@
 import './App.css';
+/* import Hello from './components/Hello';*/
+import TodaysPlan from './components/TodaysPlan';
 
 function App() {
   return (
     <>
-     <div>안녕하세요.</div>
-     <div>정연우입니다.</div>
+    {/* <Hello/> */}
+    <TodaysPlan/>
     </>
   );
 }
