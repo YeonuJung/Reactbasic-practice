@@ -67,8 +67,8 @@ const style = [
 */
 /*
 const names = ['HTML', 'CSS', 'Javascript', 'React'];
-const nameList = names.map((name) => {
-  return <li>{name}</li>
+const nameList = names.map((name, index) => {
+  return <li key = {index}>{name}</li>;
 })
 */
 
