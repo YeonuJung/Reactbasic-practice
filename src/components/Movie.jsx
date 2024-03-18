@@ -4,8 +4,9 @@ const Movie = (props) => {
     const {title, date} = props
     return (
         <>
-            <p>영화제목 : {title}</p>
-            <p>개봉 : {date}</p>      
+            <h1>영화제목 : {title}</h1>
+            <h1>개봉 : {date}</h1>
+            <hr/>      
         </>
     );
 };
