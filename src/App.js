@@ -1,29 +1,76 @@
 import "./App.css";
+// import Introduce from "./components/Introduce";
+// import Menu from "./components/Menu";
 // import DefaultProps from './components/DefaultProps';
 /* import Hello from './components/Hello';*/
 // import TodaysPlan from './components/TodaysPlan';
 /* import HeaderComponent from './components/HeaderComponent';
    import BodyComponent from './components/BodyComponent';
    import FooterComponent from './components/FooterComponent';
-   import Wrapper from './components/Wrapper'; */
-import Movie from "./components/Movie";
-// import Boolean from './components/Boolean';
+   */
+  //  import Wrapper from './components/Wrapper'; 
+  // import Movie from "./components/Movie";
+  // import PriceList from "./components/PriceList";
+  // import Boolean from './components/Boolean';
+  // import ChildComponent from "./components/ChildComponent";
 
 function App() {
+  /*
   const movieList = [
     {
       title: "웡카",
       date: "2024.01.31",
+      img: "https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20240208_43%2F1707375997377WETJ5_JPEG%2Fmovie_image.jpg"
     },
     {
-      title: "반지의 제왕",
-      date: "2024.01.30",
+      title: "파묘",
+      date: "2024.02.22",
+      img : "https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20240222_175%2F1708609058134r4oaq_JPEG%2Fmovie_image.jpg"
     },
     {
-      title: "해리포터",
-      date: "2024.01.29",
+      title: "듄:파트2",
+      date: "2024.02.28",
+      img : "https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20240207_151%2F1707288437263gBsdd_JPEG%2Fmovie_image.jpg"
     },
   ];
+  */
+ /* const priceList = [1000, 2000, 3000, 4000];
+    const prices = priceList.map((price) => {
+      return <div>가격 : {price}원</div>
+ })
+ */
+/*
+const menuList = [
+  {
+    img : "https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2F20101103_172%2Fmyownlord_1288712510878orRC1_jpg%2F011_myownlord.jpg&type=sc960_832", name : "Carbonara", category : "pasta", price : 15000
+  },
+  {
+    img : "https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20220923_164%2F166390895035357cx1_JPEG%2F65044793005731779_1310046952.jpg&type=sc960_832", name : "Margherita", category : "pizza", price : 25000
+  },
+  {
+    img : "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTExMDRfMjI3%2FMDAxNjM1OTU3NzE0MTc1.MXR_GQukpxvqvIIBv72Ggm5n8fZy1qSxt9GcLurYZF0g.BO-zjzuzcCXsh2gmJI9zgmkfKl2wFfWgF2QAVMPJMRUg.JPEG.gyuri0879%2FIMG_1607.jpg&type=sc960_832", name : "Rib Eye Steak", category : "steak", price : 50000
+  }
+];
+*/
+/*
+const style = [
+  {
+      color : 'blue', backgroundColor : 'yellow', fontSize : '50px', fontWeight : 'bold'
+  },
+  {
+      color : 'red', backgroundColor : 'green', fontSize : '50px', fontWeight : 'bold'
+  },
+  {
+      color : 'blue', backgroundColor : 'yellow', fontSize : '50px', fontWeight : 'bold'
+  }
+]
+*/
+/*
+const names = ['HTML', 'CSS', 'Javascript', 'React'];
+const nameList = names.map((name) => {
+  return <li>{name}</li>
+})
+*/
 
   return (
     <>
@@ -34,14 +81,22 @@ function App() {
      <BodyComponent/>
      <FooterComponent/>
     </Wrapper> */}
-      {movieList.map((movie) => {
-        return <Movie title={movie.title} date={movie.date} />;
-      })}
-      ;
+      {/* {movieList.map((movie, index) => {
+        return <Movie key = {index} title={movie.title} date={movie.date} img = {movie.img}/>;
+      })} */}
       {/* <Boolean bored/>
     <Boolean/> */}
       {/* <DefaultProps name = '정연우'/>
     <DefaultProps/> */}
+    {/* <PriceList prices = {prices}/> */}
+    {/* <div style = {{display : 'flex', columnGap : '50px'}}></div>
+    {menuList.map((menu) => {
+      return <Menu img = {menu.img} name = {menu.name} category = {menu.category} price = {menu.price}/>
+    })}
+    </div> */}
+    {/* <Introduce name = '정연우' age = {28} region = 'seoul' style = {style}/> */}
+    {/* <ul>{nameList}</ul> */}
+    {/* <ChildComponent>리액트</ChildComponent> */}
     </>
   );
 }
