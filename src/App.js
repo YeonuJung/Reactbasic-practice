@@ -1,21 +1,23 @@
 import "./App.css";
+// import ChangeValue from "./components/ChangeValue";
+// import EventClick from "./components/EventClick";
+// import ChangeFont from "./components/ChangeFont";
 // import Introduce from "./components/Introduce";
 // import Menu from "./components/Menu";
 // import DefaultProps from './components/DefaultProps';
-/* import Hello from './components/Hello';*/
+// import Hello from './components/Hello';
 // import TodaysPlan from './components/TodaysPlan';
-/* import HeaderComponent from './components/HeaderComponent';
-   import BodyComponent from './components/BodyComponent';
-   import FooterComponent from './components/FooterComponent';
-   */
-  //  import Wrapper from './components/Wrapper'; 
-  // import Movie from "./components/Movie";
-  // import PriceList from "./components/PriceList";
-  // import Boolean from './components/Boolean';
-  // import ChildComponent from "./components/ChildComponent";
+// import HeaderComponent from './components/HeaderComponent';
+// import BodyComponent from './components/BodyComponent';
+// import FooterComponent from './components/FooterComponent';
+// import Wrapper from './components/Wrapper'; 
+// import Movie from "./components/Movie";
+// import PriceList from "./components/PriceList";
+// import Boolean from './components/Boolean';
+// import ChildComponent from "./components/ChildComponent";
 
 function App() {
-  /*
+/*
   const movieList = [
     {
       title: "웡카",
@@ -33,12 +35,12 @@ function App() {
       img : "https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fmovie-phinf.pstatic.net%2F20240207_151%2F1707288437263gBsdd_JPEG%2Fmovie_image.jpg"
     },
   ];
-  */
- /* const priceList = [1000, 2000, 3000, 4000];
+*/
+/* const priceList = [1000, 2000, 3000, 4000];
     const prices = priceList.map((price) => {
       return <div>가격 : {price}원</div>
  })
- */
+*/
 /*
 const menuList = [
   {
@@ -97,6 +99,10 @@ const nameList = names.map((name, index) => {
     {/* <Introduce name = '정연우' age = {28} region = 'seoul' style = {style}/> */}
     {/* <ul>{nameList}</ul> */}
     {/* <ChildComponent>리액트</ChildComponent> */}
+    {/* <Hello/> */}
+    {/* <ChangeFont/> */}
+    {/* <EventClick/> */}
+    {/* <ChangeValue/> */}
     </>
   );
 }

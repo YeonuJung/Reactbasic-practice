@@ -1,9 +1,9 @@
-import React from 'react';
- 
+import React, {useState} from 'react';
 const Hello = () => {
-    const name = '정연우'
+    // const name = '정연우'
     //여기선 if for 등 다 쓸 수 있음.  
-
+    // const [인사, 인사변경] = useState('안녕하세요');
+    // const [인사, 인사변경] = useState(['안녕하세요', '어려운', '리액트네요']);
     return (
     // JSX 문법만
     // if, for, switch등 못 씀
@@ -21,11 +21,15 @@ const Hello = () => {
     // App.js 에서 컴포넌트를 사용하려고 자동완성으로 작성하면 자동으로 import도 해줌
     // 만약 자동완성으로 컴포넌트를 적지않고 직접 다 적어서 적으면? 자동으로 import 안 해줌
     <>
-        <div>안녕하세요.</div>
+        {/* <div>안녕하세요.</div>
         <div>정연우입니다.</div>
         <div className = "className">{name}입니다.</div>
         {name === '정연우'? <h1>남자</h1> : <h1>여자</h1>}
-        {name === '정연우'? <h1>남자</h1> : null}
+        {name === '정연우'? <h1>남자</h1> : null} */}
+        {/* <h3>{인사[0]}</h3>
+        <h3>{인사[1]}</h3>
+        <h3>{인사[2]}</h3> */}
+
     </>
     );
 };
