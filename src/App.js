@@ -169,4 +169,3 @@ console.log(idValue, passwordValue)
 }
 
 export default App;
-~
