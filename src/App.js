@@ -1,4 +1,7 @@
 import "./App.css";
+// import {useState} from 'react'
+// import UserID from "./components/UserID";
+// import UserPW from "./components/UserPW";
 // import ChangeValue from "./components/ChangeValue";
 // import EventClick from "./components/EventClick";
 // import ChangeFont from "./components/ChangeFont";
@@ -73,9 +76,67 @@ const nameList = names.map((name, index) => {
   return <li key = {index}>{name}</li>;
 })
 */
+/*
+ const [value, setValue] = useState(0)
+ const addValue = () => {
+  setValue((prev) => {
+    return prev + 1 
+  })
+ }
+ const deleteValue = () => {
+  setValue(0)
+ }
+*/
+/*
+const [value, setValue] = useState("안녕하세요")
+const loginValue = () => {
+  setValue("로그인되었습니다.")
+}
+const logoutValue = () => {
+  setValue("로그아웃되었습니다.")
+}
+*/
+/*
+const [style, setStyle] = useState({color : 'black'})
+const styleRed = () => {
+  setStyle({color : 'red'})
+}
+const styleGreen = () => {
+  setStyle({color : 'green'})
+}
+const styleBlue = () => {
+  setStyle({color : 'blue'})
+}
+*/
+/*
+const [idValue, setIdValue] = useState("")
+const [passwordValue, setPasswordValue] = useState()
+const addIdValue = (id) => {
+    setIdValue(id)
+}
+const addPasswordValue = (pw) => {
+    setPasswordValue(parseInt(pw))
+}
+const Verify = () => {
+  idValue === "abcd" && passwordValue === 1234? alert("로그인 성공") : alert("로그인 실패")
+}
+console.log(idValue, passwordValue)
+*/
 
   return (
     <>
+    {/* <UserID addIdValue = {addIdValue}/>
+    <UserPW addPasswordValue = {addPasswordValue}/>
+    <button type="submit" onClick = {Verify}>Login</button> */}
+    {/* <h1 style = {style}>글자색 바꾸기</h1>
+    <button onClick = {styleRed}>빨간색</button>
+    <button onClick = {styleGreen}>초록색</button>
+    <button onClick = {styleBlue}>파란색</button> */}
+      {/* <h1>{value}</h1>
+      <button onClick = {loginValue}>로그인</button>
+      <button onClick = {logoutValue}>로그아웃</button> */}
+      {/* <h1>{value}</h1>
+    <button onClick = {addValue} onMouseOut = {deleteValue}>클릭</button> */}
       {/* <Hello/> */}
       {/* <TodaysPlan/> */}
       {/* <Wrapper> 
@@ -108,3 +169,4 @@ const nameList = names.map((name, index) => {
 }
 
 export default App;
+~
