@@ -1,4 +1,13 @@
 import "./App.css";
+import { useState } from "react";
+// import Radio from "./components/Radio";
+// import Checkbox from "./components/Checkbox";
+// import StateEvent from "./components/StateEvent";
+// import Select from "./components/Select";
+// import Textarea from "./components/Textarea";
+// import FormSubmit from "./components/FormSubmit";
+// import MultiInput from "./components/MultiInput";
+// import EventOnChange from "./components/EventOnChange";
 // import PreventDefualtClick from "./components/PreventDefualtClick";
 // import {useState} from 'react'
 // import UserID from "./components/UserID";
@@ -14,14 +23,14 @@ import "./App.css";
 // import HeaderComponent from './components/HeaderComponent';
 // import BodyComponent from './components/BodyComponent';
 // import FooterComponent from './components/FooterComponent';
-// import Wrapper from './components/Wrapper'; 
+// import Wrapper from './components/Wrapper';
 // import Movie from "./components/Movie";
 // import PriceList from "./components/PriceList";
 // import Boolean from './components/Boolean';
 // import ChildComponent from "./components/ChildComponent";
 
 function App() {
-/*
+  /*
   const movieList = [
     {
       title: "웡카",
@@ -40,12 +49,12 @@ function App() {
     },
   ];
 */
-/* const priceList = [1000, 2000, 3000, 4000];
+  /* const priceList = [1000, 2000, 3000, 4000];
     const prices = priceList.map((price) => {
       return <div>가격 : {price}원</div>
  })
 */
-/*
+  /*
 const menuList = [
   {
     img : "https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2F20101103_172%2Fmyownlord_1288712510878orRC1_jpg%2F011_myownlord.jpg&type=sc960_832", name : "Carbonara", category : "pasta", price : 15000
@@ -58,7 +67,7 @@ const menuList = [
   }
 ];
 */
-/*
+  /*
 const style = [
   {
       color : 'blue', backgroundColor : 'yellow', fontSize : '50px', fontWeight : 'bold'
@@ -71,13 +80,13 @@ const style = [
   }
 ]
 */
-/*
+  /*
 const names = ['HTML', 'CSS', 'Javascript', 'React'];
 const nameList = names.map((name, index) => {
   return <li key = {index}>{name}</li>;
 })
 */
-/*
+  /*
  const [value, setValue] = useState(0)
  const addValue = () => {
   setValue((prev) => {
@@ -88,7 +97,7 @@ const nameList = names.map((name, index) => {
   setValue(0)
  }
 */
-/*
+  /*
 const [value, setValue] = useState("안녕하세요")
 const loginValue = () => {
   setValue("로그인되었습니다.")
@@ -97,7 +106,7 @@ const logoutValue = () => {
   setValue("로그아웃되었습니다.")
 }
 */
-/*
+  /*
 const [style, setStyle] = useState({color : 'black'})
 const styleRed = () => {
   setStyle({color : 'red'})
@@ -109,7 +118,7 @@ const styleBlue = () => {
   setStyle({color : 'blue'})
 }
 */
-/*
+  /*
 const [idValue, setIdValue] = useState("")
 const [passwordValue, setPasswordValue] = useState()
 const addIdValue = (id) => {
@@ -123,13 +132,20 @@ const Verify = () => {
 }
 console.log(idValue, passwordValue)
 */
+  // const priceList = [{name : "Cap", price : 10000}, {name : "Shoes", price : 20000}, {name : "Bag", price : 30000}]
+  // const regionList = ["서울", "부산", "제주"]
+  const [count, setCount] = useState({ leftCount: 0, rightCount: 0 });
 
+  function clickHandler(name) {
+    const CopySetCount = { ...count, [name]: count[name] + 1 };
+    setCount(CopySetCount);
+  }
   return (
     <>
-    {/* <UserID addIdValue = {addIdValue}/>
+      {/* <UserID addIdValue = {addIdValue}/>
     <UserPW addPasswordValue = {addPasswordValue}/>
     <button type="submit" onClick = {Verify}>Login</button> */}
-    {/* <h1 style = {style}>글자색 바꾸기</h1>
+      {/* <h1 style = {style}>글자색 바꾸기</h1>
     <button onClick = {styleRed}>빨간색</button>
     <button onClick = {styleGreen}>초록색</button>
     <button onClick = {styleBlue}>파란색</button> */}
@@ -152,20 +168,73 @@ console.log(idValue, passwordValue)
     <Boolean/> */}
       {/* <DefaultProps name = '정연우'/>
     <DefaultProps/> */}
-    {/* <PriceList prices = {prices}/> */}
-    {/* <div style = {{display : 'flex', columnGap : '50px'}}></div>
+      {/* <PriceList prices = {prices}/> */}
+      {/* <div style = {{display : 'flex', columnGap : '50px'}}></div>
     {menuList.map((menu) => {
       return <Menu img = {menu.img} name = {menu.name} category = {menu.category} price = {menu.price}/>
     })}
     </div> */}
-    {/* <Introduce name = '정연우' age = {28} region = 'seoul' style = {style}/> */}
-    {/* <ul>{nameList}</ul> */}
-    {/* <ChildComponent>리액트</ChildComponent> */}
-    {/* <Hello/> */}
-    {/* <ChangeFont/> */}
-    {/* <EventClick/> */}
-    {/* <ChangeValue/> */}
-    {/* <PreventDefualtClick/> */}
+      {/* <Introduce name = '정연우' age = {28} region = 'seoul' style = {style}/> */}
+      {/* <ul>{nameList}</ul> */}
+      {/* <ChildComponent>리액트</ChildComponent> */}
+      {/* <Hello/> */}
+      {/* <ChangeFont/> */}
+      {/* <EventClick/> */}
+      {/* <ChangeValue/> */}
+      {/* <PreventDefualtClick/> */}
+      {/* <EventOnChange/> */}
+      {/* <MultiInput/> */}
+      {/* <FormSubmit/> */}
+      {/* <Textarea/> */}
+      {/* <Select/> */}
+      {/* <Checkbox priceList = {priceList}/> */}
+      {/* <StateEvent/> */}
+      {/* <Radio regionList = {regionList}/> */}
+      <h1>Total Count : {count.leftCount + count.rightCount}</h1>
+      <span
+        style={{
+          width: "100px",
+          height: "100px",
+          backgroundColor: "skyblue",
+          display: "inline-block",
+          marginRight: "40px",
+          textAlign: "center",
+        }}
+      >
+        {count.leftCount}
+        <div>
+          <input
+            name="leftCount"
+            type="submit"
+            value="클릭"
+            onClick={(e) => {
+              clickHandler(e.target.name);
+            }}
+          />
+        </div>
+      </span>
+      <span
+        style={{
+          width: "100px",
+          height: "100px",
+          backgroundColor: "skyblue",
+          display: "inline-block",
+          marginRight: "40px",
+          textAlign: "center",
+        }}
+      >
+        {count.rightCount}
+        <div>
+          <input
+            name="rightCount"
+            type="submit"
+            value="클릭"
+            onClick={(e) => {
+              clickHandler(e.target.name);
+            }}
+          />
+        </div>
+      </span>
     </>
   );
 }
