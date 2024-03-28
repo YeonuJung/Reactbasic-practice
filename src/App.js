@@ -1,5 +1,6 @@
 import "./App.css";
 import { useState } from "react";
+import StyledComponents from "./components/StyledComponents";
 // import Radio from "./components/Radio";
 // import Checkbox from "./components/Checkbox";
 // import StateEvent from "./components/StateEvent";
@@ -28,8 +29,19 @@ import { useState } from "react";
 // import PriceList from "./components/PriceList";
 // import Boolean from './components/Boolean';
 // import ChildComponent from "./components/ChildComponent";
-
+import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 function App() {
+  const router = createBrowserRouter([
+    {
+    path: "/",
+    element: <div>Home</div>,
+    errorElement: <div>Page Not Found</div>
+    },
+    {
+    path: "/product",
+    element: <div>Product</div>
+    }
+    ]);
   /*
   const movieList = [
     {
@@ -118,7 +130,7 @@ const styleBlue = () => {
   setStyle({color : 'blue'})
 }
 */
-  /*
+/*
 const [idValue, setIdValue] = useState("")
 const [passwordValue, setPasswordValue] = useState()
 const addIdValue = (id) => {
@@ -134,14 +146,17 @@ console.log(idValue, passwordValue)
 */
   // const priceList = [{name : "Cap", price : 10000}, {name : "Shoes", price : 20000}, {name : "Bag", price : 30000}]
   // const regionList = ["서울", "부산", "제주"]
+/*
   const [count, setCount] = useState({ leftCount: 0, rightCount: 0 });
-
   function clickHandler(name) {
-    const CopySetCount = { ...count, [name]: count[name] + 1 };
-    setCount(CopySetCount);
+    setCount((prev) => {
+    return {...prev, [name] : prev[name] + 1}
+    });
   }
+*/ 
   return (
     <>
+    <RouterProvider router={router} />
       {/* <UserID addIdValue = {addIdValue}/>
     <UserPW addPasswordValue = {addPasswordValue}/>
     <button type="submit" onClick = {Verify}>Login</button> */}
@@ -190,7 +205,7 @@ console.log(idValue, passwordValue)
       {/* <Checkbox priceList = {priceList}/> */}
       {/* <StateEvent/> */}
       {/* <Radio regionList = {regionList}/> */}
-      <h1>Total Count : {count.leftCount + count.rightCount}</h1>
+      {/*<h1>Total Count : {count.leftCount + count.rightCount}</h1>
       <span
         style={{
           width: "100px",
@@ -234,7 +249,8 @@ console.log(idValue, passwordValue)
             }}
           />
         </div>
-      </span>
+          </span>*/}
+        {/* <StyledComponents/> */}
     </>
   );
 }
